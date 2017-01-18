@@ -36,17 +36,27 @@ function randomImage(imageArray){
     var choiceEl = document.getElementById('choice');
     var randomImg = document.createElement('img');
     var buttonEl = document.createElement('button');
-    randomImg.setAttribute('id', i + '_Image');
     randomImg.setAttribute('class', 'medium');
     randomImg.setAttribute('src', imageArray[random].picture);
+    buttonEl.setAttribute('type', 'submit');
     buttonEl.setAttribute('id', (i + 1) + '_Image');
     buttonEl.setAttribute('class', 'decision');
-    buttonEl.textContent = 'choice ' + (i + 1)
+    buttonEl.textContent = 'choice ' + (i + 1);
     gameEl.appendChild(randomImg);
     choiceEl.appendChild(buttonEl);
   }
 }
 randomImage(imageArray);
+var choiceOne = document.getElementById('1_Image');
+var choiceTwo = document.getElementById('2_Image');
+var choiceThree = document.getElementById('3_Image');
+console.log(choiceThree);
+var imageChoice = function(event){
+  event.preventDefault();
+  event.stopPropagation();
+  console.log('sucess');
+};
+choiceOne.addEventListener('submit', imageChoice, false);
 // function condition(){
 //   var con = start();
 //   console.log(con);
