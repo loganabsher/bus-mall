@@ -1,10 +1,12 @@
-form{
-  text-align: center;
-}
 .medium{
   width: 30%;
 }
 html{
   margin-left: 5%;
   margin-right: 5%;
+}
+button{
+  width: 10%;
+  height: 4%;
+  margin: 10%;
 }

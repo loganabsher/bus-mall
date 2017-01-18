@@ -39,10 +39,11 @@ function randomImage(imageArray){
     randomImg.setAttribute('id', i + '_Image');
     randomImg.setAttribute('class', 'medium');
     randomImg.setAttribute('src', imageArray[random].picture);
-    buttonEl.setAttribute('id', i + '_Image');
+    buttonEl.setAttribute('id', (i + 1) + '_Image');
     buttonEl.setAttribute('class', 'decision');
+    buttonEl.textContent = 'choice ' + (i + 1)
     gameEl.appendChild(randomImg);
-    buttonEl.appendChild(choiceEl);
+    choiceEl.appendChild(buttonEl);
   }
 }
 randomImage(imageArray);
