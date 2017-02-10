@@ -11,3 +11,10 @@ button{
   margin: 10%;
   font-size: 1.6em;
 }
+#busmallChart{
+  width: 90%;
+  height:70%;
+}
+canvas{
+  text-align: center;
+}
